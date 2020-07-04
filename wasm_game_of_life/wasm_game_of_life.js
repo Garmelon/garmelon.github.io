@@ -199,8 +199,8 @@ function __wbg_adapter_14(arg0, arg1) {
 
 /**
 */
-export function main() {
-    wasm.main();
+export function start() {
+    wasm.start();
 }
 
 function isLikeNone(x) {
@@ -336,7 +336,7 @@ async function init(input) {
     imports.wbg.__wbindgen_throw = function(arg0, arg1) {
         throw new Error(getStringFromWasm0(arg0, arg1));
     };
-    imports.wbg.__wbindgen_closure_wrapper52 = function(arg0, arg1, arg2) {
+    imports.wbg.__wbindgen_closure_wrapper47 = function(arg0, arg1, arg2) {
         var ret = makeClosure(arg0, arg1, 16, __wbg_adapter_14);
         return addHeapObject(ret);
     };
